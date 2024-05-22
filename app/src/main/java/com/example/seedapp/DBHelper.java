@@ -37,5 +37,6 @@ public class DBHelper extends SQLiteOpenHelper {
     // 데이터베이스 읽기 전용 연결을 얻는 메서드
     public SQLiteDatabase openReadableDatabase() {
         return this.getReadableDatabase();
+        
     }
 }
