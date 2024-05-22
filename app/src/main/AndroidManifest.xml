@@ -13,16 +13,19 @@
         android:theme="@style/Theme.SeedApp"
         tools:targetApi="31">
         <activity
+            android:name=".DataManger"
+            android:exported="false" />
+        <activity
             android:name=".DBHelper"
             android:exported="false" />
         <activity
-            android:name=".MapActivity"
+            android:name=".view.MapActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".view.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
