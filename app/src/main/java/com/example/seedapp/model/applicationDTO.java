@@ -4,13 +4,45 @@ import java.sql.Date;
 
 public class applicationDTO {
     // 이메일
-    String email;
+    private String email;
     // 공고 아이디
-    String annid;
+    private String annid;
     // 신청일자
-    Date aplctdate;
+    private Date aplctdate;
     // 상태
-    String state;
+    private String state;
 
+    // Getter and Setter methods
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAnnid() {
+        return annid;
+    }
+
+    public void setAnnid(String annid) {
+        this.annid = annid;
+    }
+
+    public Date getAplctdate() {
+        return aplctdate;
+    }
+
+    public void setAplctdate(Date aplctdate) {
+        this.aplctdate = aplctdate;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
 }

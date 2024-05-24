@@ -1,13 +1,15 @@
-package com.example.seedapp;
+package com.example.seedapp.db;
 
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "mydatabase.db";
+    private static final String DATABASE_NAME = "seedapp.db";
     private static final int DATABASE_VERSION = 1;
 
     public DBHelper(Context context) {
@@ -16,10 +18,21 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.d("success", "DB호출성공");
         // 데이터베이스가 처음 생성될 때 호출됩니다.
         // 필요한 테이블 생성 SQL 문은 여기에 작성합니다.
         // 이미 테이블이 존재한다고 가정하면, 여기에 아무 것도 작성하지 않아도 됩니다.
         // -> 다시 만들어야할 상황이 생길 수 있으므로 예시코드 작성해놓는게 좋을듯
+        String CREATE_USER_TABLE = "CREATE TABLE IF NOT EXISTS user (" +
+                "email TEXT PRIMARY KEY," +
+                "passwd TEXT NOT NULL," +
+                "name TEXT," +
+                "sex TEXT," +
+                "phonenumber TEXT," +
+                "location TEXT," +
+                "mode INTEGER," +  // Using INTEGER for boolean values
+                "totaltime INTEGER)";
+        db.execSQL(CREATE_USER_TABLE);
     }
 
     @Override
