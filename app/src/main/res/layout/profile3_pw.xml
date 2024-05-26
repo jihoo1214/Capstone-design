@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <!-- 회원정보 수정 텍스트 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mem_info"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- 구분선 -->
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#6C5D58"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="14dp"/>
+
+    <!-- 공지 -->
+    <TextView
+        android:id="@+id/description_profile3_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_profile3_pw"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"/>
+
+    <!-- 현재 비밀번호_텍스트  -->
+    <TextView
+        android:id="@+id/tv_current_password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_current_password_label"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"/>
+
+    <!-- 현재 비밀번호 입력_버튼  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="@string/et_current_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_current_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text_background"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 새 비밀번호_텍스트  -->
+    <TextView
+        android:id="@+id/tv_new_password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_new_password_label"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"/>
+
+    <!-- 새 비밀번호_버튼  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="@string/et_new_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text_background"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 새 비밀번호 확인_텍스트  -->
+    <TextView
+        android:id="@+id/tv_confirm_new_password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_confirm_new_password_label"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"/>
+
+    <!-- 새 비밀번호 확인_버튼  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="@string/et_confirm_new_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_confirm_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text_background"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- 취소 / 변경 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <!-- 취소 버튼 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancellation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_cancellation"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/Brown"
+            android:background="@drawable/rectangle_button"/>
+
+        <!-- 구분선 -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightGrey"/>
+
+        <!-- 변경 버튼 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_change"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/Brown"
+            android:background="@drawable/rectangle_button" />
+    </LinearLayout>
+</LinearLayout>
