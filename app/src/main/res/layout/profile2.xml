@@ -1,0 +1,277 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 회원정보 수정 텍스트 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mem_info"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- 구분선 -->
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6C5D58"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- 기본정보 텍스트 -->
+        <TextView
+            android:id="@+id/tv_basic_info_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_basic_info_label"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+
+        <!-- 사용자 사진 설정, 동네 설정-->
+        <RelativeLayout
+            android:id="@+id/profileHeader"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_profile_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="프로필 사진"
+                android:src="@drawable/profile" />
+
+            <!-- 사용자 사진 수정, 동네 설정 -->
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toEndOf="@id/iv_profile_picture"
+                android:layout_marginTop="35dp">
+
+                    <!-- 사진 수정 버튼 -->
+                    <Button
+                        android:id="@+id/buttonPhotoSettings"
+                        android:layout_width="115dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:text="@string/buttonPhotoSettings"
+                        app:backgroundTint="#6C5D58"
+                        android:textSize="14sp" />
+
+                    <!-- 동네 설정 버튼 -->
+                    <Button
+                        android:id="@+id/buttonNeighborhoodSettings"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:text="@string/buttonNeighborhoodSettings"
+                        app:backgroundTint="#6C5D58"
+                        android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 이름 텍스트 -->
+        <TextView
+            android:id="@+id/textNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textNameLabel"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <!-- 이름 버튼 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:inputType="textPersonName"
+                android:hint="이름 입력 - 기존 이름 보여주기"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 아이디 텍스트 -->
+        <TextView
+            android:id="@+id/textInputLayoutIDLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textInputLayoutIDLabel"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"/>
+
+        <!-- 아이디 버튼 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:inputType="textPersonName"
+                android:hint="아이디 입력 - 기존 아이디 보여주기"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 생년월일 텍스트 -->
+        <TextView
+            android:id="@+id/tv_birth_date_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textBirthDateLabel"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"/>
+
+        <!-- 생년월일 버튼 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_birth_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:inputType="number"
+                android:hint="생년월일 입력 - 기존 생년월일 보여주기"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 휴대폰 번호 텍스트 -->
+        <TextView
+            android:id="@+id/textPhoneNumberLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textPhoneNumberLabel"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp" />
+
+        <!-- 휴대폰 번호 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 휴대폰 번호 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edit_text_background"
+                    android:inputType="phone"
+                    android:hint="기존 번호 보여주기"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 인증번호 전송 버튼 -->
+            <Button
+                android:id="@+id/buttonSendVerification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonSendVerification"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rounded_edit_text_background"
+                app:backgroundTint="#6C5D58" />
+        </LinearLayout>
+
+        <!-- 인증 번호 입력 텍스트 -->
+        <TextView
+            android:id="@+id/AuthenticationNumberLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AuthenticationNumberLabel"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"/>
+
+        <!-- 인증 번호 입력 버튼 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/AuthenticationNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- 비밀번호 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical">
+
+            <!-- 비밀번호 텍스트 -->
+            <TextView
+                android:id="@+id/textInputLayoutPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textInputLayoutPasswordLabel"
+                android:textSize="16sp"
+                android:layout_marginEnd="200dp"/>
+
+            <!-- 비밀번호 변경하기 버튼-->
+            <TextView
+                android:id="@+id/btn_change2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/btn_change2"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:textColor="#6C5D58"/>
+        </LinearLayout>
+
+        <!-- 확인 버튼-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_check"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/btn_check"
+            app:backgroundTint="#6C5D58" />
+
+    </LinearLayout>
+</ScrollView>

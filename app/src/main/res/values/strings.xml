@@ -1,4 +1,110 @@
 <resources>
-    <string name="app_name">SeedApp</string>
+    <string name="app_name">2024cap_ui</string>
+
+    <!-- login -->
+    <string name="signInButton">Sign in</string>
+    <string name="createAccountButton">Create an account</string>
+    <string name="textViewSeed">\@seed</string>
+    <string name="btnLogin">Login</string>
+    <string name="etUsername"> ID</string>
+    <string name="etPassword">Password</string>
+    <string name="radioButtonVolunteer">봉사자</string>
+    <string name="radioButtonOrganization">봉사기관</string>
+    <string name="tvForgotPassword">Forgot Password?</string>
+    <string name="tvSignupPrompt">Don\'t have an account?</string>
+    <string name="btnSignup">Sign up</string>
+
+    <!-- sign up -->
+    <string name="signupText">회원가입</string>
+    <string name="textNameLabel">이름</string>
+    <string name="textName">실명을 입력하세요</string>
+    <string name="RadioGroupGenderLabel">성별</string>
+    <string name="radioButtonMale">남자</string>
+    <string name="radioButtonFemale">여자</string>
+    <string name="textBirthDateLabel">생년월일</string>
+    <string name="textBirthDate">8자리 입력</string>
+    <string name="textPhoneNumberLabel">휴대폰 번호</string>
+    <string name="textPhoneNumber">\'-\' 구분 없이 입력해 주세요</string>
+    <string name="buttonSendVerification">인증번호 전송</string>
+    <string name="AuthenticationNumberLabel">인증 번호 입력</string>
+    <string name="AuthenticationNumber">인증 번호를 입력해 주세요</string>
+    <string name="textInputLayoutIDLabel">아이디(이메일)</string>
+    <string name="textInputLayoutID">이메일 주소를 입력해 주세요</string>
+    <string name="buttonCheckEmail">중복확인</string>
+    <string name="textInputLayoutPasswordLabel">비밀번호</string>
+    <string name="textInputLayoutPassword">비밀번호 입력</string>
+    <string name="textInputLayoutPasswordConfirmLabel">비밀번호 확인</string>
+    <string name="textInputLayoutPasswordConfirm">비밀번호 확인</string>
+    <string name="btnAgreeAll">모두 동의</string>
+    <string name="radioGroupAgreement">btnAgreeAll</string>
+    <string name="radioButtonAgree1">이용약관 동의</string>
+    <string name="radioButtonAgree2">개인정보 처리방침 동의</string>
+    <string name="radioButtonAgree3">마케팅 정보 수신 동의</string>
+    <string name="btnSignup2">가입하기</string>
+
+    <!-- id_search -->
+    <string name="description_id">※ 회원정보에 등록된 휴대전화 번호와 입력한 휴대전화 \t\t번호가 같아야, 인증번호를 받을 수 있습니다.</string>
+    <string name="SignUpText">ID/PW 찾기</string>
+    <string name="signupPwText">비밀번호 찾기</string>
+    <string name="btn_id">아이디</string>
+    <string name="btn_pw">비밀번호 찾기</string>
+    <string name="tv_name_label">이름</string>
+    <string name="et_name">실명을 입력해주세요</string>
+    <string name="btn_find_id">아이디 찾기</string>
+    <string name="btn_find_pw">비밀번호 찾기</string>
+
+    <!-- home -->
+    <string name="searchBar">Search</string>
+
+
+    <!-- calendar -->
+    <string name="calendarTitle">Calendar</string>
+    <string name="dateTextView">날짜를 선택하세요</string>
+    <string name="scrollview_description">봉사활동 예정이나 기록을 보여주는 스크롤 뷰</string>
+
+
+
+    <!-- my page -->
+    <string name="username">\@seed</string>
+    <string name="manageProfileButton">프로필 관리</string>
+    <string name="localSettingsButton">동네 설정</string>
+    <string name="MyFirstActivity">지원현황</string>
+    <string name="MySecondActivity">지원결과</string>
+    <string name="MyThirdActivity">봉사이력</string>
+    <string name="mem_info">회원정보 수정</string>
+    <string name="notifications">알림</string>
+    <string name="version_info">버전 정보</string>
+    <string name="faq">자주 묻는 질문</string>
+    <string name="inquiries">1:1 문의</string>>
+    <string name="announcements">공지사항</string>
+    <string name="policies">약관 및 정책</string>
+    <string name="logout">로그아웃</string>
+    <string name="Withdrawal">탈퇴하기</string>
+
+
+    <!-- profile1,2,3 -->
+    <string name="description_profile">* 회원님의 정보보호를 위한 확인 절차입니다.\n\tseed의 비밀번호를 입력해주세요.</string>
+    <string name="btn_cancellation">취소</string>
+    <string name="btn_check">확인</string>
+    <string name="btn_change">변경</string>
+    <string name="btn_change2">변경하기</string>
+    <string name="ForgotPassword">* 비밀번호가 기억나지 않는다면?</string>
+    <string name="description_profile3_pw">* 고객님의 소중한 정보를 보호하기 위하여 \n새로운 비밀번호로 변경 후 서비스를 이용 주세요.</string>
+    <string name="tv_current_password_label">현재 비밀번호</string>
+    <string name="et_current_password">현재 비밀번호 입력</string>
+    <string name="tv_new_password_label">새 비밀번호</string>
+    <string name="et_new_password">영어, 숫자 또는 특수문자 조합 20자 이내</string>
+    <string name="tv_confirm_new_password_label">새 비밀번호 확인</string>
+    <string name="et_confirm_new_password">새 비밀번호 재입력</string>
+    <string name="tv_basic_info_label">기본정보</string>
+    <string name="buttonPhotoSettings">사진 변경</string>
+    <string name="buttonNeighborhoodSettings">동네 설정</string>
+    <string name="tv_id_label">아이디</string>
+
+
+
+
+
+
 
 </resources>

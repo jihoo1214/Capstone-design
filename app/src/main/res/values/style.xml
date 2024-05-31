@@ -1,0 +1,10 @@
+<resources>
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/button</item>
+    </style>
+    <style name="Theme.SeedApp" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+</resources>

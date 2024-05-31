@@ -2,4 +2,26 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="DimGrey">#696969</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Brown">#6C5D58</color>
+    <color name="button">#6C5D58</color>
+    <color name="Beige">#F5EFE7</color>
+    <color name="bottomBar">#A9BA9D</color>
+    <color name="background">#FDF4E2</color>
+    <color name="lightGrey">#D3D3D3</color>
+
+    <color name="silver">#C0C0C0</color>
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>

@@ -16,13 +16,13 @@ import com.example.seedapp.model.userDTO;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
     private DBHelper dbHelper;
     private SQLiteDatabase db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_test);
         Button insert = (Button) findViewById(R.id.insert);
         Button update = (Button) findViewById(R.id.update);
         Button delete = (Button) findViewById(R.id.delete);
